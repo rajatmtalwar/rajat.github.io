@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <meta name="theme-color" content="#000000"/>
+    <title>w2w</title>
+</head>
+<body style="background-color: #000000;">
+    <header>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" style="isolation:isolate" viewBox="0 0 120.097 41.152" width="5rem"><defs><filter id="prefix__a" x="-200%" y="-200%" width="400%" height="400%" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB"><feGaussianBlur xmlns="http://www.w3.org/2000/svg" in="SourceGraphic" stdDeviation="1.288"/><feOffset xmlns="http://www.w3.org/2000/svg" dx="1" dy="1" result="pf_100_offsetBlur"/><feFlood xmlns="http://www.w3.org/2000/svg" flood-color="#FFF" flood-opacity="1"/><feComposite xmlns="http://www.w3.org/2000/svg" in2="pf_100_offsetBlur" operator="in" result="pf_100_dropShadow"/><feBlend xmlns="http://www.w3.org/2000/svg" in="SourceGraphic" in2="pf_100_dropShadow"/></filter></defs><g filter="url(#prefix__a)"><path d="M97.143 4.717l5.723 20.018 4.125-20.018h8.106l-8.018 31.435h-7.031l-5.956-19.785-5.956 19.785h-7.001L73.116 4.717h8.106l4.096 19.989 5.753-19.989h6.072zM70.551 30.919v5.233H48.135v-4.447L58.714 20.43q2.178-2.381 3.223-4.156 1.044-1.774 1.044-3.369 0-2.178-1.1-3.425-1.101-1.247-3.145-1.247-2.201 0-3.47 1.517-1.269 1.516-1.269 3.986h-6.514q0-2.987 1.426-5.458 1.427-2.47 4.032-3.874Q55.547 3 58.848 3q5.054 0 7.85 2.426 2.797 2.426 2.797 6.85 0 2.426-1.258 4.942-1.258 2.515-4.312 5.862l-7.435 7.839h14.061zM27.027 4.717l5.723 20.018 4.125-20.018h8.106l-8.018 31.435h-7.031l-5.956-19.785-5.956 19.785h-7.001L3 4.717h8.106l4.096 19.989 5.753-19.989h6.072z" fill="#FFF"/></g></svg>
+        </div>
+    </header>
+
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+          // Use the window load event to keep the page load performant
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js');
+          });
+        }
+        </script>
+</body>
+</html>
